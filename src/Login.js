@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { withFormik } from 'formik';
+// import yup from 'yup';
 import './css/login.css';
 import UserIcon from './img/login/user6.png'
 
@@ -48,7 +49,8 @@ class Login extends Component {
                       type="submit"
                       name="login"
                       id="login"
-                      value="Login" />
+                      value="Login"
+                      onSubmit={handleSubmit} />
                 </div>
                 <div>
                     <ul>
@@ -65,12 +67,17 @@ class Login extends Component {
 }
 
 export default withFormik({
-  isValid: false,
+  validationOnChange: false,
   mapPropsToValues: () => ({
     user: 'dev@usportgo.com',
     password: '123456'
   }),
   handleSubmit: () => {},
-  validate: () => {},
+  /* validationSchema: yup.object().shape({
+    user: yup
+      .string()
+      .required()
+      .email()
+  }), */
   displayName: 'LoginForm',
 })(Login);
