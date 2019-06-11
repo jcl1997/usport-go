@@ -1,9 +1,10 @@
 {
-  "homepage": "https://jcl1997.github.io/julio-react",
+  "homepage": "https://jcl1997.github.io/usport-go",
   "name": "julio-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "formik": "^1.5.7",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

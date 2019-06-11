@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* Isto é necessário para não haver rolagens horizontais quando movermos os elementos */
+  html, body {overflow-x: hidden;}
+  body {
+    font: 100% arial, verdana, tahoma, sans-serif;
+    color: #FFF;
+    background-color: #DDA0DD;
+  }
+  header {
+    background: #800080;
+    padding: 30px;
+    overflow: hidden;
+  }
+  #logo{
+    height: 75px;
+    width: 85px;
+    position: relative;
+    left: 820px;
+    right: 30px;
+    margin-left: 300px;
+    bottom: 30px;
+    clip-path: ellipse();
+  }
+  header h1 {
+    text-align: center;
+  }
+  header input {
+    float: right;
+    padding: 10px;
+    width: 200px;
+    border: none;
+  }
+  .main {
+    padding: 30px;
+  }
+  .main p {
+    font-size: .9em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+  }
+  #tabela{
+    height: 600px;
+    width: 1200px;
+  }
+  .menu-anchor {
+    width: 40px;
+    height: 32px;
+    float: left;
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #FFF;
+  }
+  .menu-anchor:before {
+    content: "";
+    display: block;
+    margin: 7px auto;
+    width: 70%;
+    height: 0.25em;
+    background:#800080;
+    box-shadow: 
+    0 .45em 0 0 #800080,
+    0 .9em 0 0 #800080;
+  }
+  .menu-active .menu-anchor {background: #800080}
+  menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 220px;
+    height: 100%;
+    padding-top: 10px;
+    background: #800080;
+    box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3);
+  }
+  menu li a {
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin: 0 10px;
+    padding: 10px;
+    color: #FFF;
+    text-decoration: none;
+  }
+  menu li a:hover {
+    background: #FFF;
+    color: #800080;
+  }
+  #god{
+    height: 75px;
+    width: 75px;
+    position: relative;
+    right: 275px;
+    margin-left: 300px;
+    clip-path: ellipse();
+  } 
+  menu {
+    -webkit-transform: translateX(-220px);
+    -moz-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    transform: translateX(-220px);
+}
+
+/*
+    Essa é a posição original do HEADER e do MAIN
+*/
+header, .main {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/*
+   Com a classe menu-active na tag HTML
+*/
+.menu-active menu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.menu-active header, 
+.menu-active .main {
+    -webkit-transform: translateX(220px);
+    -moz-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px);
+}
