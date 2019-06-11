@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { withFormik } from 'formik';
-// import yup from 'yup';
+import * as rules from './rules';
 import './css/login.css';
 import UserIcon from './img/login/user6.png'
 
@@ -30,8 +30,8 @@ class Login extends Component {
                       onChange={handleChange}
                       type="email"
                       value={values.user}
-                      errors={errors.user}
                       placeholder="Insira seu nome de usuário" />
+                      <p>{errors.user}</p>
                 </div>
                 <div>
                     <p>Senha</p>
@@ -43,6 +43,7 @@ class Login extends Component {
                       value={values.password}
                       errors={errors.password}
                       placeholder="Insira sua senha" />
+                      <p>{errors.password}</p>
                 </div>
                 <div>
                     <input
@@ -73,11 +74,9 @@ export default withFormik({
     password: '123456'
   }),
   handleSubmit: () => {},
-  /* validationSchema: yup.object().shape({
-    user: yup
-      .string()
-      .required()
-      .email()
-  }), */
+  validationSchema: rules.join({
+    user: rules.email(),
+    password: rules.required()
+  }),
   displayName: 'LoginForm',
 })(Login);
