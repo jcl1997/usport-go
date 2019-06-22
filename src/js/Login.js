@@ -13,6 +13,9 @@ class Login extends Component {
       errors
     } = this.props;
 
+    console.log('errors::', errors);
+    
+
     return (
       <div className="
         sport
@@ -27,26 +30,27 @@ class Login extends Component {
           col-xl-3
           text-white">
           <form
-            className="was-validated"
             onSubmit={handleSubmit}>
               <Fragment>
                 <div className="usuario">
-                    <img src={UserIcon} alt="User" />
+                    <img
+                      className="d-block mx-auto"
+                      src={UserIcon}
+                      alt="User" />
                 </div>
-                <div  className="login">
+                <div  className="login text-center">
                   <h1>Login</h1>
                   <div>
                     <p>Usuário</p>
                     <input
                       id="user"
                       name="user"
-                      className="form-control is-invalid"
                       onChange={handleChange}
-                      type="email"
+                      type="text"
                       value={values.user}
                       placeholder="Insira seu nome de usuário" />
-                      <div className="invalid-feedback">
-                        <p>{errors.user}</p>
+                      <div>
+                        <p className="error-login-alert">{errors.user}</p>
                       </div>
                   </div>
                   <div>
@@ -55,13 +59,12 @@ class Login extends Component {
                       type="password"
                       name="password"
                       id="password"
-                      className="form-control is-invalid"
                       onChange={handleChange}
                       value={values.password}
                       errors={errors.password}
                       placeholder="Insira sua senha" />
-                      <div className="invalid-feedback">
-                        <p>{errors.password}</p>
+                      <div>
+                        <p className="error-login-alert">{errors.password}</p>
                       </div>
                   </div>
                   <div>
@@ -93,7 +96,9 @@ export default withFormik({
     user: 'dev@usportgo.com',
     password: '123456'
   }),
-  handleSubmit: () => {},
+  handleSubmit: (values, props) => {
+    props.submitForm(values);
+  },
   validationSchema: rules.join({
     user: rules.email(),
     password: rules.required()

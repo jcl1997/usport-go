@@ -24,12 +24,6 @@
     padding-right: 5px;
 }
 
-.usuario {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .usuario img {
     width: 80px;
     padding: 3px;
@@ -39,26 +33,19 @@ h1{
     padding-bottom: 20px;
     letter-spacing: 10px;
     text-transform: uppercase;
-    text-align: center;
     font-size: 25px;
 }
 
 .login {
-    text-align: center;
     font-weight: bold;
 }
 
 .login input {
-    width: 100%;
+    width: 95%;
     margin-bottom: 21px; 	
 }
 
-.login input {
-    width: 100%;
-    margin-bottom: 21px; 	
-}
-
-input[type="email"], input[type="password"] {
+input[type="text"], input[type="password"] {
     border: none;
     border-bottom: 1px solid white;
     outline: none;
@@ -103,4 +90,11 @@ input[type="email"], input[type="password"] {
 .login ul {
     margin: 0;
     list-style: none;
+}
+
+.error-login-alert {
+    width: 100%;
+    color: #dc3545;
+    margin-top: 0.25rem;
+    font-size: 80%;
 }
