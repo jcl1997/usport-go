@@ -88,7 +88,7 @@ class Login extends Component {
 }
 
 export default withFormik({
-  validateOnChange?: false,
+  validateOnChange: false,
   mapPropsToValues: () => ({
     user: 'dev@usportgo.com',
     password: '123456'
