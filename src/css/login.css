@@ -4,32 +4,20 @@
     border: 0;
 }
 
-html { 
+.sport {
+    height: 100vh;
     background: url(./../img/login/esportes-olimpicos-2016.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-#root {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-flow: column wrap;
     box-sizing: border-box;
     font-family:  "Comfortaa", sans-serif;
-    height: 100vh;
 }
 
-.container {
-    color: #ffffff;
-    width: 90%;
+.form {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 80px 0px 80px 0px;
-}
-
-.container form {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5px;
@@ -115,15 +103,4 @@ input[type="email"], input[type="password"] {
 .login ul {
     margin: 0;
     list-style: none;
-}
-
-@media all and (min-width: 758px) {
-    .container {
-        max-width: 420px;
-    }
-
-    .container form {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 }
