@@ -8,9 +8,10 @@ export default class SiderBar extends Component {
     return (
       <menu
         className="
-          col-12
+          col-10
           col-sm-4
-          col-lg-2
+          col-md-5
+          col-lg-4
           border-right
           sider-bar
           text-white" >
