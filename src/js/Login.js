@@ -13,9 +13,6 @@ class Login extends Component {
       errors
     } = this.props;
 
-    console.log('errors::', errors);
-    
-
     return (
       <div className="
         sport

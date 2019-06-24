@@ -1,0 +1,13 @@
+.sider-bar {
+    height: 100vh;
+    background-color: #800080;
+}
+
+.sider-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sider-bar li {
+    background-color: #800080;
+}

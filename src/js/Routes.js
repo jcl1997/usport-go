@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { isAuthenticated } from './Auth';
 import Login from './Login';
+import Home from './Home';
 
 export default class Routes extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Routes extends Component {
             ? <Component {...props} />
             : <Redirect
               to={{
-                pathname: '/login',
+                pathname: '/',
                 state: {
                   from: props.location
                 }
@@ -30,9 +31,12 @@ export default class Routes extends Component {
       <BrowserRouter>
         <Switch>
           <Route
-            path="/login"
+            exact
+            path="/"
             component={() => <Login />} />
-          <PrivateRoute path='/home' component={() => <h1>AQUI</h1>} />
+          <PrivateRoute
+            path='/home'
+            component={() => <Home />} />
         </Switch>
       </BrowserRouter>
     );
