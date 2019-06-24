@@ -4,7 +4,7 @@ import './../css/progressBar.css'
 export default class ProgressBar extends Component {
   render() {
     return (
-      <div>
+      <div className="col-12">
         <h5 className="card-title text-center">Rank: 1</h5>
         <div className="progress progress-striped">
           <div className="progress-bar" />

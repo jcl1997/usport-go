@@ -5,7 +5,7 @@ import './../css/logo.css';
 export default class Logo extends Component {
   render() {
     return (
-      <div>
+      <div className="row">
         <img
           className="
             logo
