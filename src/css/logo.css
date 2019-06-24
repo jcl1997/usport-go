@@ -1,18 +1,4 @@
 .logo {
-    width: 280px;
+    width: 200px;
     padding: 3px;
-}
-
-@media all and (max-width: 576px) {
-    .logo {
-        width: 200px;
-        padding: 3px;
-    }   
-}
-
-@media all and (min-width: 576px) {
-    .logo {
-        width: 280px;
-        padding: 3px;
-    }   
 }

@@ -10,8 +10,9 @@ export default class SiderBar extends Component {
         className="
           col-10
           col-sm-4
-          col-md-5
-          col-lg-4
+          col-md-4
+          col-lg-3
+          col-xl-2
           border-right
           sider-bar
           text-white" >
