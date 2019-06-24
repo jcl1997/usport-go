@@ -4,7 +4,10 @@ import SiderBar from './SiderBar';
 export default class home extends Component {
   render() {
     return (
-      <SiderBar />
+      <div className="row">
+        <SiderBar />
+        <div>HEADER</div>
+      </div>
     );
   }
 }
