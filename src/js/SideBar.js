@@ -38,7 +38,7 @@ export default class SiderBar extends Component {
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
               <LinkIcon
-                title="Dashbord"
+                title="Dashboard"
                 icon={faChartLine}
                 to="#"
                 size="2x" />
