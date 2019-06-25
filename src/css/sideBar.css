@@ -1,13 +1,13 @@
-.sider-bar {
+.side-roxo {
     height: 100vh;
     background-color: #800080;
 }
 
-.sider-bar a {
+.side-roxo a {
     text-decoration: none;
     color: black;
 }
 
-.sider-bar li {
+.side-roxo li {
     background-color: #800080;
 }

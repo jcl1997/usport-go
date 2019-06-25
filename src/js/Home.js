@@ -19,28 +19,31 @@ export default class home extends Component {
 
   render() {
     const { isToggleOn } = this.state;
-    
+
     const button = (
       <button
+        className="text-white"
         onClick={this.handleClick} >
         <Icon
           icon={faBars}
           size="2x" />
       </button>
     );
-    
-    
+
+
     return (
       <div className="row">
         <SideBar
-          button={button}
           ref={left => this.left = left}
           alignment="left"
           visible={isToggleOn}
           handleClick={this.handleClick} />
-        <Header
-          button={button}
-          visible={isToggleOn} />
+          <div className="col">
+            <Header
+              button={button}
+              visible={isToggleOn} />
+            <div>BODY</div>
+          </div>
       </div>
     );
   }

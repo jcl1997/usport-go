@@ -6,42 +6,31 @@ import {
   faChartLine,
   faUsers,
   faTrophy,
-  faFolder,
-  faBars
+  faFolder
 } from '@fortawesome/free-solid-svg-icons'
 import LinkIcon from './LinkIcon';
-import Icon from './Icon';
 
 export default class SiderBar extends Component {
   render() {
     const {
-      button,
       visible
     } = this.props;
-    
+
     if (!visible) {
       return <div />
     }
-    
+
     return (
-      <menu
+      <div
         className="
           col-10
           col-sm-4
           col-md-5
           col-lg-4
           col-xl-3
-          border-right
-          sider-bar
+          side-roxo
           text-white">
-        <div className="row">
-          <div className="col-10">
-            <Logo />
-          </div>
-          <div className="col-2">
-            {button}
-          </div>
-        </div>
+        <Logo />
         <hr />
         <ProgressBar />
         <hr />
@@ -77,7 +66,7 @@ export default class SiderBar extends Component {
             </li>
           </ul>
         </div>
-      </menu>
+      </div>
     );
-  } 
+  }
 }
