@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './../css/siderBar.css';
+import './../css/sideBar.css';
 import Logo from './Logo';
 import ProgressBar from './ProgressBar';
 import {
@@ -14,6 +14,15 @@ import Icon from './Icon';
 
 export default class SiderBar extends Component {
   render() {
+    const {
+      button,
+      visible
+    } = this.props;
+    
+    if (!visible) {
+      return <div />
+    }
+    
     return (
       <menu
         className="
@@ -24,15 +33,13 @@ export default class SiderBar extends Component {
           col-xl-3
           border-right
           sider-bar
-          text-white" >
+          text-white">
         <div className="row">
           <div className="col-10">
             <Logo />
           </div>
           <div className="col-2">
-            <Icon
-              icon={faBars}
-              size="2x" />
+            {button}
           </div>
         </div>
         <hr />
