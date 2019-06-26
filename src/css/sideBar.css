@@ -1,5 +1,9 @@
 .side-roxo {
+    position: absolute;
+    margin: 0;
+    border: 0;
     height: 100vh;
+    z-index: 1;
     background-color: #800080;
 }
 
@@ -10,4 +14,11 @@
 
 .side-roxo li {
     background-color: #800080;
+}
+
+@media all and (min-width: 768px) {
+    .side-roxo {
+        position: relative;
+        z-index: 0;
+    }
 }

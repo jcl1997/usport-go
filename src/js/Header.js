@@ -4,15 +4,23 @@ import './../css/header.css';
 export default class Header extends Component {
   render() {
     const {
+      visible,
       button
     } = this.props;
 
+    const className = [
+      'header',
+      'row',
+      'text-white',
+      'd-flex',
+    ];
+
+    if (visible) {
+      className.push('invert')
+    }
+
     return(
-      <div className="
-        header
-        row
-        text-white
-        d-flex">
+      <div className={className.join(' ')}>
         {button}
         <div className="
           col

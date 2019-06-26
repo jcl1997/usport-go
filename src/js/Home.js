@@ -22,7 +22,7 @@ export default class home extends Component {
 
     const button = (
       <button
-        className="text-white"
+        className="text-white border-0 btn"
         onClick={this.handleClick} >
         <Icon
           icon={faBars}
@@ -39,11 +39,15 @@ export default class home extends Component {
           visible={isToggleOn}
           handleClick={this.handleClick} />
         <div className="col">
-            <Header
-              button={button}
-              visible={isToggleOn} />
-            <div className="col">BODY</div>
+          <Header
+            button={button}
+            visible={isToggleOn} />
+          <div className="container">
+            <div className="">
+              BODY
+            </div>
           </div>
+        </div>
       </div>
     );
   }

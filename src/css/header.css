@@ -5,3 +5,15 @@
 .header button {
   background-color: #800080;
 }
+
+.invert {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media all and (min-width: 768px) {
+  .invert {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -23,12 +23,12 @@ export default class SiderBar extends Component {
     return (
       <div
         className="
+          side-roxo
           col-10
           col-sm-4
           col-md-5
           col-lg-4
           col-xl-3
-          side-roxo
           text-white">
         <Logo />
         <hr />
