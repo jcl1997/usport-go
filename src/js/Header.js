@@ -19,7 +19,7 @@ export default class Header extends Component {
           container-fluid
           justify-content-center
           align-items-stretch">
-          <h1 className="text-center">USPORT-GO</h1>
+          <h2 className="text-center">USPORT-GO</h2>
         </div>
       </div>
     );

@@ -38,11 +38,11 @@ export default class home extends Component {
           alignment="left"
           visible={isToggleOn}
           handleClick={this.handleClick} />
-          <div className="col">
+        <div className="col">
             <Header
               button={button}
               visible={isToggleOn} />
-            <div>BODY</div>
+            <div className="col">BODY</div>
           </div>
       </div>
     );
