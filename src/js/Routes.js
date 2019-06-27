@@ -1,44 +1,33 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter,
   Route,
-  Redirect,
+  // Redirect,
   Switch
 } from 'react-router-dom';
-import { isAuthenticated } from './Auth';
 import Login from './Login';
-import Home from './Home';
+import Dashboard from './Dashboard';
 
 export default class Routes extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      isAuthenticated: false
+    };
+    this.handleAuthenticated = this.handleAuthenticated.bind(this);
+  }
+
+  handleAuthenticated() {
+    this.setState(state => ({
+      isAuthenticated: !state.isAuthenticated
+    }));
+  }
+
   render() {
-    const PrivateRoute = ({ component: Component, ...rest }) => (
-      <Route
-        {...rest}
-        render={ props => (
-          isAuthenticated()
-            ? <Component {...props} />
-            : <Redirect
-              to={{
-                pathname: '/',
-                state: {
-                  from: props.location
-                }
-              }} />
-        )} />
-    );
+    // const { state /} = this;    
 
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={() => <Login />} />
-          <PrivateRoute
-            path='/home'
-            component={() => <Home />} />
-        </Switch>
-      </BrowserRouter>
+      
     );
   }
 }

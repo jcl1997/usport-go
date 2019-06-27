@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
+import Icon from './Icon';
 
 export default class LinkIcon extends Component {
   render() {
@@ -10,18 +11,20 @@ export default class LinkIcon extends Component {
       size
     } = this.props;
     return(
-      <a
+      <Link
         className="text-white"
-        href={to}>
+        to={to}>
         <div className="container-fluid row">
-          <div className="col-10 justify-content-start">{title}</div>
-          <div className="col-2 justify-content-end">
-            <FontAwesomeIcon
+          <div className="col-10 justify-content-start">
+            {title}
+          </div>
+          <div className="col-2">
+            <Icon
               icon={icon}
               size={size} />
           </div>
         </div>
-      </a>
+      </Link>
     );
   }
 }

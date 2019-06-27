@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SideBar from './SideBar';
 import Header from './Header';
-import Dashboard from './Dashboard';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Icon from './Icon';
+import Dashboard from './Dashboard';
+import Login from './Login';
 
 export default class home extends Component {
   constructor(props) {
@@ -34,19 +36,42 @@ export default class home extends Component {
 
 
     return (
-      <div className="row">
-        <SideBar
-          ref={left => this.left = left}
-          alignment="left"
-          visible={isToggleOn}
-          handleClick={this.handleClick} />
-        <div className="col">
-          <Header
-            button={button}
-            visible={isToggleOn} />
-          <Dashboard />
+      <BrowserRouter>
+        <div className="row">
+          <SideBar
+            ref={left => this.left = left}
+            alignment="left"
+            visible={isToggleOn}
+            handleClick={this.handleClick} />
+          <div className="col">
+            <Header
+              button={button}
+              visible={isToggleOn} />
+            <Switch>
+              <Route
+                exact
+                path="/login"
+                render={() => <Login />} />
+              <Route
+                exact
+                path="/"
+                render={() => <Dashboard {...this.props} />} />
+              <Route
+                exact
+                path="/Team"
+                render={() => <div>Time</div>} />
+              <Route
+                exact
+                path="/Championship"
+                render={() => <div>Campeonato</div>} />
+              <Route
+                exact
+                path="/record"
+                render={() => <div>Registro</div>} />
+            </Switch>
+          </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }
