@@ -6,6 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Icon from './Icon';
 import Dashboard from './Dashboard';
 import Login from './Login';
+import Team from './Team';
 
 export default class home extends Component {
   constructor(props) {
@@ -38,11 +39,11 @@ export default class home extends Component {
       isToggleOn
     } = this.state;
 
-    if (!isAuthenticated) {
-      return <Login
-        {...this.props}
-        handleAuthenticated={this.handleAuthenticated} />;
-    }
+    // if (!isAuthenticated) {
+    //   return <Login
+    //     {...this.props}
+    //     handleAuthenticated={this.handleAuthenticated} />;
+    // }
 
     const button = (
       <button
@@ -79,7 +80,7 @@ export default class home extends Component {
               <Route
                 exact
                 path="/usport-go/Team"
-                render={() => <div>Time</div>} />
+                render={() => <Team />} />
               <Route
                 exact
                 path="/usport-go/Championship"

@@ -1,0 +1,215 @@
+/* Textos sobre os times*/
+.txttime{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.titulohead{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+/*Nome dos times*/
+.titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+/*Logo dos Times*/
+.logo{
+    margin: 0 auto;
+    margin-top:70px;
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+}
+/*Imagem jogadores*/
+.jogadores{ margin: 0 auto;
+    margin-top:70px;
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    border-radius:100%;
+    background-color: #DCDCDC;
+    border:10px solid #9370DB;  
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);;
+
+/*Bloco atras jogadores*/
+}
+.bloco{
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+/*nick dos jogadores*/
+.nickjogadores{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: #9370DB;
+}
+
+.add{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+/*Links finais*/
+.linkfot{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: white
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/*Texto do inicio*/
+.txtstart{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    display: flex;
+    position: relative;
+    left: 100px;
+    top: -10px;
+    color: #9370DB;
+}
+
+/*Configuraçoes do cabeçalho*/
+.Cabecalho{
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    box-shadow: 0px 20px 18px -13px rgba(204,204,204,1);
+}
+
+/* Backgrund principal da pagina*/
+body{
+    background-color: white;
+}
+
+/* Backgrund footer*/
+footer{
+    background-color: beige;
+}
+
+/* botão principal*/
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    /* Movimento do gredient*/
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover.cor-1 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+/*Texto final*/
+.final{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Temas principais*/
+.princ{
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: #9370DB;
+}
+@media all and (min-width: 768px) {
+
+/*Cabeçalho responsivo*/
+    .cabecalho{
+        width: 100%;
+        height: 50px;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        position: fixed;
+        box-shadow: 0px 20px 18px -13px rgba(204,204,204,1);
+    }
+
+    /*Imagem a esquerda L*/
+    #conteinerl img{
+        float: left;
+    
+    }
+    
+/*Imagem a Direita R*/
+    #conteinerr img{
+        float: right;
+
+    }
+    
+/*Foto jogadores*/
+    .jogadores{ margin: 0 auto;
+        margin-top:70px;
+        display: flex;
+        justify-content: flex-start;
+        width: 400px;
+        height: 400px;
+        align-items: center;
+        border-radius:100%;
+        background-color: #DCDCDC;
+        border:10px solid #9370DB;  
+        box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);;
+    }
+
+    /*Titulos*/
+    .titulo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+    }
+
+    .nickjogadores{
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        color: #9370DB;
+    }
+    
+
+}
