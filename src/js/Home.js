@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import SideBar from './SideBar';
 import Header from './Header';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -11,8 +11,19 @@ export default class home extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {isToggleOn: false};
+    this.state = {
+      isToggleOn: false,
+      isAuthenticated: false
+    };
+
     this.handleClick = this.handleClick.bind(this);
+    this.handleAuthenticated = this.handleAuthenticated.bind(this);
+  }
+
+  handleAuthenticated() {
+    this.setState(state => ({
+      isAuthenticated: !state.isAuthenticated
+    }));
   }
 
   handleClick() {
@@ -22,7 +33,16 @@ export default class home extends Component {
   }
 
   render() {
-    const { isToggleOn } = this.state;
+    const {
+      isAuthenticated,
+      isToggleOn
+    } = this.state;
+
+    console.log('@Home::isAuthenticated::', isAuthenticated);
+
+    if (!isAuthenticated) {
+      return <Redirect to="/usport-go/login" />;
+    }
 
     const button = (
       <button
