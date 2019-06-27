@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89baf5cfc3fd0e1691833419a6f2b8f2",
+    "revision": "e2dcb1e9cd0eef4974c19a5f2c98a6d3",
     "url": "/usport-go/index.html"
   },
   {
-    "revision": "5cdf4f684fd2b3ca44d9",
-    "url": "/usport-go/static/css/main.2510335f.chunk.css"
+    "revision": "277af0785edddfcbd603",
+    "url": "/usport-go/static/css/main.a8aa0d8d.chunk.css"
   },
   {
-    "revision": "430629b6733fa97027d9",
-    "url": "/usport-go/static/js/2.a37f4f0a.chunk.js"
+    "revision": "9d05099dccc054b19480",
+    "url": "/usport-go/static/js/2.fd6fd761.chunk.js"
   },
   {
-    "revision": "5cdf4f684fd2b3ca44d9",
-    "url": "/usport-go/static/js/main.b1207c31.chunk.js"
+    "revision": "277af0785edddfcbd603",
+    "url": "/usport-go/static/js/main.078df289.chunk.js"
   },
   {
     "revision": "18969d9bbf3747f8dba7",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3f3f0cda7bdac106f103702a43fc87a8",
     "url": "/usport-go/static/media/esportes-olimpicos-2016.3f3f0cda.jpg"
+  },
+  {
+    "revision": "168f39002e20ff5a2332267846aa3deb",
+    "url": "/usport-go/static/media/logo.168f3900.png"
   },
   {
     "revision": "ee75a0d954593028523a906c5b95a6d8",

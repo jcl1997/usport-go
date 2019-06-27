@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/usport-go/static/css/main.2510335f.chunk.css",
-    "main.js": "/usport-go/static/js/main.b1207c31.chunk.js",
-    "main.js.map": "/usport-go/static/js/main.b1207c31.chunk.js.map",
+    "main.css": "/usport-go/static/css/main.a8aa0d8d.chunk.css",
+    "main.js": "/usport-go/static/js/main.078df289.chunk.js",
+    "main.js.map": "/usport-go/static/js/main.078df289.chunk.js.map",
     "runtime~main.js": "/usport-go/static/js/runtime~main.ddf5562b.js",
     "runtime~main.js.map": "/usport-go/static/js/runtime~main.ddf5562b.js.map",
-    "static/js/2.a37f4f0a.chunk.js": "/usport-go/static/js/2.a37f4f0a.chunk.js",
-    "static/js/2.a37f4f0a.chunk.js.map": "/usport-go/static/js/2.a37f4f0a.chunk.js.map",
+    "static/js/2.fd6fd761.chunk.js": "/usport-go/static/js/2.fd6fd761.chunk.js",
+    "static/js/2.fd6fd761.chunk.js.map": "/usport-go/static/js/2.fd6fd761.chunk.js.map",
     "index.html": "/usport-go/index.html",
-    "precache-manifest.b307ccd547c16e43f430eeadf018042e.js": "/usport-go/precache-manifest.b307ccd547c16e43f430eeadf018042e.js",
+    "precache-manifest.3b25934b4595b30943e2a115c2ceadf7.js": "/usport-go/precache-manifest.3b25934b4595b30943e2a115c2ceadf7.js",
     "service-worker.js": "/usport-go/service-worker.js",
-    "static/css/main.2510335f.chunk.css.map": "/usport-go/static/css/main.2510335f.chunk.css.map",
+    "static/css/main.a8aa0d8d.chunk.css.map": "/usport-go/static/css/main.a8aa0d8d.chunk.css.map",
     "static/media/login.css": "/usport-go/static/media/esportes-olimpicos-2016.3f3f0cda.jpg",
+    "static/media/logo.png": "/usport-go/static/media/logo.168f3900.png",
     "static/media/user6.png": "/usport-go/static/media/user6.ee75a0d9.png"
   }
 }
