@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/usport-go/precache-manifest.3b25934b4595b30943e2a115c2ceadf7.js"
+  "/usport-go/precache-manifest.5c2f7efa9696a2337302cdd60c68141f.js"
 );
 
 self.addEventListener('message', (event) => {
