@@ -1,0 +1,7 @@
+.player {
+    width: 240px;
+    height: 240px;
+    background-color: #DCDCDC;
+    border:10px solid #9370DB;
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}

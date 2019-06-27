@@ -8,7 +8,12 @@ export default class Team extends Component {
       <div className="container-fluid px-lg-5">
         <Members
           alt="Robo"
-          player={Robo} />
+          player={Robo}
+          firstName="LEONARDO"
+          secondName="SOUZA"
+          nickPlayers="ROBO"
+          position="TOPO"
+          city="São Paulo - SP" />
       </div>
     );
   }
