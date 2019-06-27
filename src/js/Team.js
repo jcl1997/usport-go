@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Member from './Member';
 import { members, reservations } from './Members';
 import Flamengo from './../img/times/Flamengo.png';
+import './../css/logo.css';
 
 export default class Team extends Component {
   render() {
@@ -9,7 +10,10 @@ export default class Team extends Component {
       <div className="container-fluid pt-2 mt-2">
         <div>
           <img
-            className="mx-auto d-block"
+            className="
+              mx-auto
+              d-block
+              team-logo"
             src={Flamengo}
             alt="Flamengo" />
         </div>
