@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SideBar from './SideBar';
 import Header from './Header';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -38,10 +38,10 @@ export default class home extends Component {
       isToggleOn
     } = this.state;
 
-    console.log('@Home::isAuthenticated::', isAuthenticated);
-
     if (!isAuthenticated) {
-      return <Redirect to="/usport-go/login" />;
+      return <Login
+        {...this.props}
+        handleAuthenticated={this.handleAuthenticated} />;
     }
 
     const button = (

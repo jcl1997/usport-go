@@ -93,13 +93,15 @@ export default withFormik({
     user: 'dev@usportgo.com',
     password: '123456'
   }),
-  handleSubmit: (values, props) => {
+  handleSubmit: (values, { props }) => {
     let user = 'dev@usportgo.com';
     let password = '123456';
 
     const email = values.user.toString() === user.toString();
     const authentication = values.password.toString() === password.toString();
-    console.log(email && authentication);
+    if (email && authentication) {
+      props.handleAuthenticated()
+    }
   },
   validationSchema: rules.join({
     user: rules.email(),
