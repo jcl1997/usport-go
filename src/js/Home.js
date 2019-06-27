@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import SideBar from './SideBar';
 import Header from './Header';
+import Dashboard from './Dashboard';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Icon from './Icon';
 
 export default class home extends Component {
   constructor(props) {
     super(props);
+    
     this.state = {isToggleOn: false};
     this.handleClick = this.handleClick.bind(this);
   }
@@ -42,11 +44,7 @@ export default class home extends Component {
           <Header
             button={button}
             visible={isToggleOn} />
-          <div className="container">
-            <div className="">
-              BODY
-            </div>
-          </div>
+          <Dashboard />
         </div>
       </div>
     );
