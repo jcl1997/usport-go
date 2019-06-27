@@ -10,7 +10,7 @@ import Login from './Login';
 export default class home extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {isToggleOn: false};
     this.handleClick = this.handleClick.bind(this);
   }
@@ -50,23 +50,23 @@ export default class home extends Component {
             <Switch>
               <Route
                 exact
-                path="/login"
+                path="/usport-go/login"
                 render={() => <Login />} />
               <Route
                 exact
-                path="/"
+                path="/usport-go/"
                 render={() => <Dashboard {...this.props} />} />
               <Route
                 exact
-                path="/Team"
+                path="/usport-go/Team"
                 render={() => <div>Time</div>} />
               <Route
                 exact
-                path="/Championship"
+                path="/usport-go/Championship"
                 render={() => <div>Campeonato</div>} />
               <Route
                 exact
-                path="/record"
+                path="/usport-go/record"
                 render={() => <div>Registro</div>} />
             </Switch>
           </div>

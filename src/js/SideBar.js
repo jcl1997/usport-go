@@ -40,28 +40,28 @@ export default class SiderBar extends Component {
               <LinkIcon
                 title="Dashboard"
                 icon={faChartLine}
-                to="#/"
+                to="/usport-go/"
                 size="2x" />
             </li>
             <li className="list-group-item">
               <LinkIcon
                 title="Time"
                 icon={faUsers}
-                to="#/Team"
+                to="/usport-go/Team"
                 size="2x" />
             </li>
             <li className="list-group-item">
               <LinkIcon
                 title="Campeonato"
                 icon={faTrophy}
-                to="#/Championship"
+                to="/usport-go/Championship"
                 size="2x" />
             </li>
             <li className="list-group-item">
             <LinkIcon
                 title="Registro"
                 icon={faFolder}
-                to="#record"
+                to="/usport-go/record"
                 size="2x" />
             </li>
           </ul>
