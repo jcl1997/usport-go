@@ -7,6 +7,8 @@ import Icon from './Icon';
 import Dashboard from './Dashboard';
 import Login from './Login';
 import Team from './Team';
+import Support from './Support';
+import Championship from './Championship';
 
 export default class home extends Component {
   constructor(props) {
@@ -39,11 +41,11 @@ export default class home extends Component {
       isToggleOn
     } = this.state;
 
-    if (!isAuthenticated) {
-      return <Login
-        {...this.props}
-        handleAuthenticated={this.handleAuthenticated} />;
-    }
+    // if (!isAuthenticated) {
+    //   return <Login
+    //     {...this.props}
+    //     handleAuthenticated={this.handleAuthenticated} />;
+    // }
 
     const button = (
       <button
@@ -84,11 +86,15 @@ export default class home extends Component {
               <Route
                 exact
                 path="/usport-go/Championship"
-                render={() => <div>Campeonato</div>} />
+                render={() => <Championship />} />
               <Route
                 exact
                 path="/usport-go/record"
                 render={() => <div>Registro</div>} />
+              <Route
+                exact
+                path="/usport-go/support"
+                render={() => <Support />} />
             </Switch>
           </div>
         </div>

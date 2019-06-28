@@ -6,7 +6,8 @@ import {
   faChartLine,
   faUsers,
   faTrophy,
-  faFolder
+  faFolder,
+  faHeadset
 } from '@fortawesome/free-solid-svg-icons'
 import LinkIcon from './LinkIcon';
 
@@ -62,6 +63,13 @@ export default class SiderBar extends Component {
                 title="Registro"
                 icon={faFolder}
                 to="/usport-go/record"
+                size="2x" />
+            </li>
+            <li className="list-group-item">
+            <LinkIcon
+                title="Suporte"
+                icon={faHeadset}
+                to="/usport-go/support"
                 size="2x" />
             </li>
           </ul>
