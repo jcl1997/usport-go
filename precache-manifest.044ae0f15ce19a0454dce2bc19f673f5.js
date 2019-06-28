@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ef426dbbd8dd79aff04bde9c7347a02",
+    "revision": "34ad750c78422af0e827c0fc9c229a4c",
     "url": "/usport-go/index.html"
   },
   {
-    "revision": "3673d5ce184869598daa",
-    "url": "/usport-go/static/css/main.ad122ae8.chunk.css"
+    "revision": "eea431526d990f12b3be",
+    "url": "/usport-go/static/css/main.295cebd8.chunk.css"
   },
   {
-    "revision": "017a835e12320f35ff1a",
-    "url": "/usport-go/static/js/2.1ae9d425.chunk.js"
+    "revision": "8e7161e23a7c7fba3e15",
+    "url": "/usport-go/static/js/2.fdd7e338.chunk.js"
   },
   {
-    "revision": "3673d5ce184869598daa",
-    "url": "/usport-go/static/js/main.80f52c85.chunk.js"
+    "revision": "eea431526d990f12b3be",
+    "url": "/usport-go/static/js/main.aa79e051.chunk.js"
   },
   {
     "revision": "18969d9bbf3747f8dba7",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c43e828639c13049df49299e2b490c31",
     "url": "/usport-go/static/media/brtt.c43e8286.png"
+  },
+  {
+    "revision": "5bbb655bbe826b1ec97a3377ec53e846",
+    "url": "/usport-go/static/media/championship.5bbb655b.png"
   },
   {
     "revision": "3f3f0cda7bdac106f103702a43fc87a8",
