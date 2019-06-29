@@ -30,9 +30,14 @@ class Register extends Component {
 
     const { message } = this.state;
 
+    const errorS = (errors.name === undefined)
+      && (errors.user === undefined)
+      && (errors.password === undefined)
+      && (errors.confirmPassword === undefined);
+
     return(
       <div className="container-fluid pt-2 mt-2">
-        { message && <div className="pt-2 mt-2">
+        { message && errorS && <div className="pt-2 mt-2">
             <div className="alert alert-success" role="alert">
               Mensagem enviada com sucesso.
             </div>

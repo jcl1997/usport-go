@@ -28,11 +28,15 @@ class Support extends Component {
       errors
     } = this.props;
 
-    const { message } = this.state;
+    const messageSuccess = this.state.message;
+
+    const errorS = (errors.name === undefined)
+      && (errors.user === undefined)
+      && (errors.message === undefined);
 
     return(
       <div className="container-fluid pt-2 mt-2">
-        { message && <div className="pt-2 mt-2">
+        { messageSuccess && errorS && <div className="pt-2 mt-2">
             <div className="alert alert-success" role="alert">
               Mensagem enviada com sucesso.
             </div>

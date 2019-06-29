@@ -3,6 +3,22 @@ import { withFormik } from 'formik';
 import * as rules from './rules';
 
 class Recover extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      message: false
+    };
+
+    this.handleSend = this.handleSend.bind(this);
+  }
+
+  handleSend() {
+    this.setState(state => ({
+      message: true
+    }));
+  }
+
   render() {
     const {
       handleChange,
@@ -11,7 +27,8 @@ class Recover extends Component {
       values,
       errors
     } = this.props;
-    
+    const { message } = this.state;
+
     return(
       <div className="
         sport
@@ -25,6 +42,12 @@ class Recover extends Component {
           col-lg-5
           col-xl-3
           text-white">
+          { message && (errors.user === undefined) && <div className="pt-2 mt-2">
+              <div className="text-success text-center" role="alert">
+                Mensagem enviada com sucesso.
+              </div>
+            </div>
+          }
           <form
             onSubmit={handleSubmit}>
             <Fragment>
@@ -51,9 +74,9 @@ class Recover extends Component {
                   <input
                     type="submit"
                     name="enviar"
-                    id="enviar"
-                    value="enviar"
-                    onSubmit={handleSubmit} />
+                    id="recover"
+                    value="Enviar"
+                    onClick={() => this.handleSend()} />
                 </div>
                 <div>
                   <ul>
@@ -75,9 +98,7 @@ export default withFormik({
     user: 'dev@usportgo.com',
     password: '123456'
   }),
-  handleSubmit: (values, { props }) => {
-    let user = 'dev@usportgo.com'
-  },
+  handleSubmit: () => {},
   validationSchema: rules.join({
     user: rules.email(),
     password: rules.required()

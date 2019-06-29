@@ -5,15 +5,15 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
   
-label {
+#page-wrapper label {
     display: block;
     padding-bottom: 0.25em;
 }
   
-input[type="email"],
-input[type="text"],
-input[type="password"],
-textarea {
+#page-wrapper input[type="email"],
+#page-wrapper input[type="text"],
+#page-wrapper input[type="password"],
+#page-wrapper textarea {
     display: block;
     font-size: 1.2em;
     padding: 0.25em;
