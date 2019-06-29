@@ -13,12 +13,12 @@ export default class Conquest extends Component {
       'row'
     ];
 
-    className.push(success);
+    className.push(success, 'border-0');
 
     return (
       <div className="pt-2">
         <div
-          className="card bloco">
+          className="bloco">
           <div className={className.join(' ')}>
             <div className="
               col
