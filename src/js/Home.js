@@ -10,6 +10,7 @@ import Team from './Team';
 import Support from './Support';
 import Championship from './Championship';
 import Register from './Register';
+import ConquestCard from './ConquestCard';
 
 export default class home extends Component {
   constructor(props) {
@@ -42,7 +43,7 @@ export default class home extends Component {
       isToggleOn
     } = this.state;
 
-    if (!isAuthenticated) {
+    if (false) {
       return <Login
         {...this.props}
         handleAuthenticated={this.handleAuthenticated} />;
@@ -96,6 +97,10 @@ export default class home extends Component {
                 exact
                 path="/usport-go/support"
                 render={() => <Support />} />
+              <Route
+                exact
+                path="/usport-go/conquest"
+                render={() => <ConquestCard />} />
             </Switch>
           </div>
         </div>
