@@ -43,7 +43,7 @@ export default class home extends Component {
       isToggleOn
     } = this.state;
 
-    if (false) {
+    if (!isAuthenticated) {
       return <Login
         {...this.props}
         handleAuthenticated={this.handleAuthenticated} />;
