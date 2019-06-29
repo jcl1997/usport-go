@@ -61,7 +61,7 @@ export default class SiderBar extends Component {
             </li>
             <li className="list-group-item">
             <LinkIcon
-                title="Registro"
+                title="Registrar"
                 icon={faFolder}
                 to="/usport-go/record"
                 size="2x" />

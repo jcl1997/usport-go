@@ -10,7 +10,10 @@ label {
     padding-bottom: 0.25em;
 }
   
-input[type="email"], input[type="text"], textarea {
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
     display: block;
     font-size: 1.2em;
     padding: 0.25em;

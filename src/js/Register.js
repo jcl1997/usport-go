@@ -3,7 +3,7 @@ import { withFormik } from 'formik';
 import * as rules from './rules';
 import './../css/suport.css';
 
-class Support extends Component {
+class Register extends Component {
   constructor(props) {
     super(props);
 
@@ -40,7 +40,7 @@ class Support extends Component {
         }
         <form onSubmit={handleSubmit}>
           <div id="page-wrapper">
-            <h1>Formulário para Suporte</h1>
+            <h1>Formulário para Registro</h1>
             <div>
               <label>Nome</label>
               <input
@@ -66,14 +66,27 @@ class Support extends Component {
                 </div>
             </div>
             <div>
-              <label>Mensagem</label>
-              <textarea
-                name="message"
+              <label>Senha</label>
+              <input
+                name="password"
                 onChange={handleChange}
-                value={values.message}
-                placeholder="Mensagem Aqui!!!" />
+                type="password"
+                value={values.password}
+                placeholder="senha" />
                 <div>
-                  <p className="error-login-alert">{errors.message}</p>
+                  <p className="error-login-alert">{errors.password}</p>
+                </div>
+            </div>
+            <div>
+              <label>Confirmar senha</label>
+              <input
+                name="confirmPassword"
+                onChange={handleChange}
+                type="password"
+                value={values.confirmPassword}
+                placeholder="Confirmar senha" />
+                <div>
+                  <p className="error-login-alert">{errors.confirmPassword}</p>
                 </div>
             </div>
             <div>
@@ -96,13 +109,15 @@ export default withFormik({
   mapPropsToValues: () => ({
     name: 'Dev USport-GO',
     user: 'dev@usportgo.com',
-    message: 'Oi, tudo bem? Só passando para avisar que no dia [data agendada]. Nós teremos nossa reunião sobre [assunto da reunião]. Se houver algo que eu possa adiantar, não hesite em me dizer. Abraços!'
+    password: '123456',
+    confirmPassword: '123456'
   }),
   handleSubmit: () => {},
   validationSchema: rules.join({
     name: rules.required(),
     user: rules.email(),
-    message: rules.required()
+    password: rules.required(),
+    confirmPassword: rules.required()
   }),
-  displayName: 'SupportForm',
-})(Support);
+  displayName: 'RegisterForm',
+})(Register);

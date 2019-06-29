@@ -9,6 +9,7 @@ import Login from './Login';
 import Team from './Team';
 import Support from './Support';
 import Championship from './Championship';
+import Register from './Register';
 
 export default class home extends Component {
   constructor(props) {
@@ -90,7 +91,7 @@ export default class home extends Component {
               <Route
                 exact
                 path="/usport-go/record"
-                render={() => <div>Registro</div>} />
+                render={() => <Register />} />
               <Route
                 exact
                 path="/usport-go/support"
