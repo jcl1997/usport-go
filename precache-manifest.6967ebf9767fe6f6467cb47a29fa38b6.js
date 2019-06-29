@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b512aebf372766a2fd5f77596d89c8aa",
+    "revision": "bf8ecbabb7e7edc0727dac303801b6d0",
     "url": "/usport-go/index.html"
   },
   {
-    "revision": "610454158c3be25e4b5e",
+    "revision": "17c61cc595dd4aa67556",
     "url": "/usport-go/static/css/main.b082261e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/usport-go/static/js/2.01df972d.chunk.js"
   },
   {
-    "revision": "610454158c3be25e4b5e",
-    "url": "/usport-go/static/js/main.71ccf7c4.chunk.js"
+    "revision": "17c61cc595dd4aa67556",
+    "url": "/usport-go/static/js/main.7208dce0.chunk.js"
   },
   {
     "revision": "18969d9bbf3747f8dba7",
