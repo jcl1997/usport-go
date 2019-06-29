@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47df6da5fd7fe13566b767fd738ee18b",
+    "revision": "e6c66461ce0e67a75461538e6d64b8f4",
     "url": "/usport-go/index.html"
   },
   {
-    "revision": "6ecc160600b3b67033c9",
-    "url": "/usport-go/static/css/main.295cebd8.chunk.css"
+    "revision": "da82cde6ccd751165cdd",
+    "url": "/usport-go/static/css/main.b9d4b421.chunk.css"
   },
   {
-    "revision": "8e7161e23a7c7fba3e15",
-    "url": "/usport-go/static/js/2.fdd7e338.chunk.js"
+    "revision": "9e9bfdcfb6f007ac855c",
+    "url": "/usport-go/static/js/2.44198279.chunk.js"
   },
   {
-    "revision": "6ecc160600b3b67033c9",
-    "url": "/usport-go/static/js/main.6b3aad6e.chunk.js"
+    "revision": "da82cde6ccd751165cdd",
+    "url": "/usport-go/static/js/main.ec3c9d3d.chunk.js"
   },
   {
     "revision": "18969d9bbf3747f8dba7",
@@ -106,10 +106,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d2b540be925f32473e8954736fffebc6",
     "url": "/usport-go/static/media/juzinho.d2b540be.png"
-  },
-  {
-    "revision": "168f39002e20ff5a2332267846aa3deb",
-    "url": "/usport-go/static/media/logo.168f3900.png"
   },
   {
     "revision": "ce9a9055b4495f306b47362eb4e1a952",
