@@ -4,21 +4,30 @@ import * as rules from './rules';
 import './../css/login.css';
 import UserIcon from './../img/login/user6.png'
 import Recover from './Recover';
+import RegisterLogin from './RegisterLogin';
 
 class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      recover: false
+      recover: false,
+      register: false
     };
 
     this.handlePassword = this.handlePassword.bind(this);
+    this.handleRegister = this.handleRegister.bind(this);
   }
 
   handlePassword() {
     this.setState(state => ({
       recover: !state.recover
+    }));
+  }
+
+  handleRegister() {
+  this.setState(state => ({
+      register: !state.register
     }));
   }
 
@@ -30,11 +39,19 @@ class Login extends Component {
       errors
     } = this.props;
 
-    const { recover } = this.state;
+    const {
+      recover,
+      register
+    } = this.state;
 
     if (recover) {
       return <Recover
         handlePassword={this.handlePassword} />;
+    }
+
+    if (register) {
+      return <RegisterLogin
+        handleRegister={this.handleRegister} />
     }
 
     return (
@@ -98,7 +115,7 @@ class Login extends Component {
                 </div>
                 <div>
                   <ul>
-                    <li><a href="#">Ainda não possui uma conta?</a></li>
+                    <li><a href="#" onClick={() => this.handleRegister()}>Ainda não possui uma conta?</a></li>
                     <li><a href="#" onClick={() => this.handlePassword()}>Esqueceu sua senha?</a></li>
                   </ul>
                 </div>
